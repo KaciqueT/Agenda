@@ -1,0 +1,410 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* border: red solid 1px; */
+}
+
+/* AUXILIARES */
+
+.ocultar{
+    display: none !important;
+}
+
+/**************/
+
+.cabecalho{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: end;
+}
+
+.titulocabecalho{
+    font-weight: bolder;
+    font-size:xx-large;
+    font-style: italic;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 214, 214);
+    width: 100%;
+    height: 100vh;
+}
+
+.aba{
+    background-color: rgb(56, 56, 145);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+    margin-right: 5px;
+}
+
+.abaselecionada{
+    background-color: rgb(214, 214, 214) !important;
+    color: black;
+    font-weight: bold;
+}
+
+.if_principal{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.btnGeral{
+    background-color: rgb(56, 56, 145);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* ************************************* */
+
+/* JANELA NOVO */
+
+/* ************************************* */
+
+#novo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.elementosForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.campoForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 55%;
+}
+
+.campoForm label{
+    margin-bottom: 2px;
+}
+
+
+.campoForm input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.botoesForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************************************* */
+
+/* JANELA PESQUISAR */
+
+/* ************************************* */
+
+#pesquisa{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.campoPesq{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.campoPesq input[type=text]{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.campoPesq label{
+    margin-right: 5px;
+}
+
+.dgv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    
+}
+
+.resultado{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 900px;
+}
+
+.titulos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: inherit;
+    background-color: rgb(56, 56, 145);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.titulo{
+    border-right: rgb(214, 214, 214) 1px solid;
+    padding: 5px;
+}
+
+.dados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: inherit;
+}
+
+.linhadados{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: inherit;
+    background-color: white;
+}
+
+.coluna{
+    border-right: rgb(214, 214, 214) 1px solid;
+    padding: 5px;
+}
+
+.c1{
+    width: 5%;
+}
+.c2{
+    width: 25%;
+}
+.c3{
+    width: 15%;
+}
+.c4{
+    width: 30%;
+}
+.c5{
+    width: 25%;
+}
+
+/* ************************************* */
+
+/* JANELA GESTÃO */
+
+/* ************************************* */
+
+.resultadogestao{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 950px;
+}
+
+.cg1{
+    width: 5%;
+}
+
+.cg2{
+    width: 20%;
+}
+
+.cg3{
+    width: 15%;
+}
+
+.cg4{
+    width: 30%;
+}
+
+.cg5{
+    width: 25%;
+}
+
+.cg6{
+    width: 10%;
+}
+
+.gestao{
+    margin-top: 30px;
+}
+
+.c_op{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.iconeop{
+    width: 25%;
+    cursor: pointer;
+}
+
+/* POPUP */
+
+.fundopopup{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999;
+}
+
+.janelapopup{
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 500px;
+}
+
+.titulopopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 56, 145);
+    color: white;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    width: inherit;
+}
+
+.principalpopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    padding: 5px;
+    background-color: rgb(214, 214, 214);
+    flex-direction: column;
+}
+
+.rodapepopup{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+    background-color: rgb(184, 184, 184);
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* ************************************* */
+
+/* JANELA FILTRAR */
+
+/* ************************************* */
+
+.filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.iconefiltro{
+    width: 38px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: rgb(56, 56, 145);
+    border-radius: 10px;
+}
+
+#btnfiltro{
+    align-items: center;
+    justify-content: center;
+}
+
+.campoFormFitro{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    width: 55%;
+}
+
+.campoFormFitro label{
+    margin-bottom: 2px;
+}
+
+
+.campoFormFitro input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ************************************* */
+
+/* JANELA HOME e SOBRE*/
+
+/* ************************************* */
+
+.dev{
+    margin-left: 5px;
+    margin-bottom: 3px;
+    font-size:smaller;
+    font-style: italic;
+}
+
+.sobre{
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textosobre{
+    margin-top: 5px;
+}
+
+.imagemhome{
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 20px;
+}

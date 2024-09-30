@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="pesquisa">
+        <div class="campoPesq">
+            <label>ID:</label>
+            <input type="radio" name="f_pesquisar" value="id">
+        </div>
+        <div class="campoPesq">
+            <label>Nome:</label>
+            <input type="radio" name="f_pesquisar" value="nome" checked>
+        </div>
+        <div class="campoPesq">
+            <label>Data de Nascimento:</label>
+            <input type="radio" name="f_pesquisar" value="nasc">
+        </div>
+        <div class="campoPesq">
+            <label>E-mail:</label>
+            <input type="radio" name="f_pesquisar" value="email">
+        </div>
+        <div class="campoPesq">
+            <input type="text" id="f_txtpesquisar" placeholder="Pesquisar" name="f_txtpesquisar">
+        </div>
+        <div class="campoPesq">
+            <button id="btnPesquisar" class="btnGeral">Pesquisar</button>
+        </div>
+        
+       
+    </div>
+
+    <div id="dgv" class="dgv">
+        <div id="resultado" class="resultado">
+            <div id="titulos" class="titulos">
+                <div class="titulo c1">ID</div>
+                <div class="titulo c2">Nome</div>
+                <div class="titulo c3">Contato</div>
+                <div class="titulo c4">E-mail</div>
+                <div class="titulo c5">Data de Nascimento</div>
+            </div>                      
+            <div id="dados" class="dados">
+                <!-- <div class="linhadados">
+                    <div class="coluna c1">ID</div>
+                    <div class="coluna c2">Nome</div>
+                    <div class="coluna c3">Contato</div>
+                    <div class="coluna c4">E-mail</div>
+                    <div class="coluna c5">Data de Nascimento</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+  
+    <script src="pesquisar.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="filtro" class="filtro"> 
+        <div class="campoFormFitro">
+            <input placeholder="Filtre seus contatos" type="text" name="filtroNome" id="filtroNome">
+            <img src="Imagens/filtrar.svg" class="iconefiltro" id="btnfiltro">
+        </div>
+    </div>
+
+
+    <div id="dgv" class="dgv gestao">
+        <div id="resultado" class="resultadogestao">
+            <div id="titulos" class="titulos">
+                <div class="titulo c1">ID</div>
+                <div class="titulo c2">Nome</div>
+                <div class="titulo c3">Contato</div>
+                <div class="titulo c4">E-mail</div>
+                <div class="titulo c5">Data de Nascimento</div>
+            </div>                      
+            <div id="dados" class="dados">
+                <!-- <div class="linhadados">
+                    <div class="coluna c1">ID</div>
+                    <div class="coluna c2">Nome</div>
+                    <div class="coluna c3">Contato</div>
+                    <div class="coluna c4">E-mail</div>
+                    <div class="coluna c5">Data de Nascimento</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+  
+
+    <script src="filtrar.js" type="module"></script>
+  
+
+</body>
+</html>
